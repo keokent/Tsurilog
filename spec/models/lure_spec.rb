@@ -1,5 +1,13 @@
 require 'spec_helper'
 
 describe Lure do
-  pending "add some examples to (or delete) #{__FILE__}"
+  before do
+    @lure = Lure.new(name: "Flick Shake", lure_type: 2)
+  end
+
+  subject { @lure }
+
+  it { should respond_to(:name) }
+  it { should respond_to(:photo_url) }
+  it { should respond_to(:lure_type) }
 end
