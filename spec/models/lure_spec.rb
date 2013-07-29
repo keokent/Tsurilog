@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Lure do
   before do
-    @lure = Lure.new(name: "Flick Shake", lure_type: "soft")
+    @lure = Lure.new(name: "Flick Shake", lure_type: 2)
   end
 
   subject { @lure }
