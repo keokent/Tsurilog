@@ -3,7 +3,7 @@ class CreateLures < ActiveRecord::Migration
     create_table :lures do |t|
       t.string :name
       t.string :photo_url
-      t.string :lure_type
+      t.integer :lure_type
 
       t.timestamps
     end
