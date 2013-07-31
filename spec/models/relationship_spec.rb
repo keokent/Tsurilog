@@ -7,7 +7,7 @@ describe Relationship do
   let(:relationship) { user1.relationships.build(lure_id: lure1.id) }
 
   subject { relationship }
-  
+
   it { should be_valid }
 
   describe "user methods" do
