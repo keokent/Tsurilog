@@ -1,4 +1,4 @@
 class Relationship < ActiveRecord::Base
-  belongs_to :user, class_name: "User"
-  belongs_to :lure, class_name: "Lure"
+  belongs_to :user
+  belongs_to :lure
 end

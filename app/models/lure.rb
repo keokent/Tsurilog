@@ -1,3 +1,4 @@
 class Lure < ActiveRecord::Base
-  has_many :relationships, foreign_key: "user_id"
+  has_many :relationships
+  has_many :users, :through => :relationships
 end
