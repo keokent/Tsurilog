@@ -7,8 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
   <header>
     <div class="wrap">
+      <h1><%= link_to "ホーム", "#" %>bite</h1>
       <div id="menu">
         <ul>
           <li><%= link_to "ホーム", "#" %></li>
@@ -18,8 +20,13 @@
       </div>
     </div>
   </header>
+
   <div class="container">
     <%= yield %>
-  <div>
+  </div>
+
+  <footer>
+  </footer>
+
 </body>
 </html>
