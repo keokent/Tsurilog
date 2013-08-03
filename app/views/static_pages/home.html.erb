@@ -1,41 +1,37 @@
 <div id="intro">
   <div class="wrap">
-<h2>つれるよ〜</h2>
-
-<% unless signed_in? %>
-<%= link_to "いますぐ登録する", signup_path, class: "regi btn_large btn_dark" %>
-<% end %>
-</div>
-</div>
 <div class="story">
-  <h3>こんなサービス</h3>
+  <!-- <h3>biteへようこそ</h3> -->
   <div class="ichi">
     <dl>
       <dt class="circle"><%= image_tag('fish1.png') %></dt>
-      <dd><h4>同じのばっか</h4>
-        <p>うにゃう</p>
+      <dd><h4>同じ</h4>
+        <p>似たような道具ばかりになりがち</p>
       </dd>
     </dl>
   </div>
   <div class="nino">
     <dl>
       <dt class="circle"><%= image_tag('fish2.png') %></dt>
-      <dd><h4>バランスがとれる</h4>
-        <p>あああ</p>
+      <dd><h4>いろいろ</h4>
+        <p>管理すればかぶるの防いでいろいろなの使える</p>
       </dd>
     </dl>
-
-
 </div>
   <div class="san">
     <dl>
       <dt class="circle"><%= image_tag('fish3.png') %></dt>
-      <dd><h4>biteする</h4>
-        <p>わーお</p>
+      <dd><h4>bite</h4>
+        <p>釣れる</p>
       </dd>
     </dl>
-
-
   </div>
+</div><!-- //.story -->
+
+<% unless signed_in? %>
+<%= link_to "いますぐ登録する", signup_path, class: "regi btn_large btn_dark" %>
+<% end %>
 </div>
+</div>
+
 
