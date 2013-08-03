@@ -45,6 +45,10 @@ header nav li {
   margin-right: 10px;
   background: #ccc;
 }
+.menu {}
+.menu .signin {
+  width: 300px;
+}
 
 /*intro*/
 #intro {
@@ -72,9 +76,10 @@ header nav li {
 }
 
 /*footer*/
-#footer {
+footer {
   width: 980px;
   margin: 0 auto;
+  text-align: center;
 }
 
 /*input*/
@@ -86,6 +91,7 @@ input {
   -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
   box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
 }
+.btn_large {}
 .btn_bk {
   background: #000;
   -webkit-border-radius: 6px;
