@@ -1,0 +1,32 @@
+<header>
+  <div class="wrap">
+    <h1><%= link_to "bite", root_path %></h1>
+    <div id="menu">
+      <nav>
+        <ul>
+          <li><%= link_to "ホーム", root_path %></li>
+          <% if signed_in? %>
+            <li><%= link_to "マイページ", user_path(current_user) %></li>
+            <li><%= link_to "サインアウト", signout_path, method: "delete" %></li>
+          <% else %>
+            <li><%= link_to "サインイン", signin_path %></li>
+          <% end %>
+        </ul>
+        <% unless signed_in? %>
+          <div class="signin_box">
+            <% form_for(:session, url: sessions_path) do |f| % >
+
+            <%= f.label :email %>
+            <%= f.text_field :email %>
+
+            <%= f.label :password %>
+            <%= f.password_field :password %>
+
+            <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+            <% end %>
+          </div>
+        <% end %>
+      </nav>
+    </div>
+  </div>
+</header>
