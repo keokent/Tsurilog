@@ -11,3 +11,6 @@
  *= require_self
  *= require_tree .
  */
+ // icons.css.scss (or wherever)
+i.cool { font-family: 'entypo' }
+i.cool:before { content: "\1F44D"; }
