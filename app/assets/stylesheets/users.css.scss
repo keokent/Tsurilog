@@ -11,8 +11,12 @@ body {
 p {
   font-size: 12px;
 }
-a:link {
+a {
   text-decoration: none;
+  color: #000;
+  &:hover {
+    color: #333;
+  }
 }
 h1, h2, h3 {
   margin: 0;
@@ -37,26 +41,33 @@ dt,dd {
 
 /*header*/
 header {
-  background: #eee;
   width: 100%;
   position: relative;
   height: 80px;
 }
 header .wrap {
-/*  width: 980px;*/
+  width: 980px;
   margin: 0 auto;
   height: 80px;
   position: relative;
+
 }
 header h1 {
-  display: inline;
+  background: asset-url('logo.png') 0 0 no-repeat;
+  width: 180px;
+  height: 68px;
+}
+header h1 a {
+  display: block;
+  text-indent: -9999px;
+  width: 100px;
+  height: 100px;
 }
 #menu {
   right: 0;
   top: 0;
   position: absolute;
   height: 80px;
-  width: 500px;
 }
 #menu .signin_box {
   width: 280px;
@@ -82,13 +93,26 @@ header h1 {
 
 /*intro*/
 #intro {
-/*  background-image: asset-url('intro_bg.jpg');*/
+  background-image: asset-url('intro_bg.jpg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  min-height: 500px;
+  background-size: 100%;
+  min-height: 472px;
 }
 #intro h2 {
   font-weight: bold;
+  color: #FFF;
+}
+#intro .wrap {
+  width: 980px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  position: relative;
+}
+#intro .regi {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+
 }
 
 /*container*/
