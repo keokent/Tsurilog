@@ -7,9 +7,12 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  background: #efefef;
 }
 p {
   font-size: 12px;
+  margin: 0;
+  padding: 0;
 }
 small {
   font-size: 100%;
@@ -21,7 +24,7 @@ a {
     color: #333;
   }
 }
-h1, h2, h3 {
+h1, h2, h3,h4 {
   margin: 0;
   padding: 0;
 }
@@ -40,6 +43,8 @@ ul,li {
 }
 dt,dd {
   display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 /*header*/
@@ -48,22 +53,22 @@ header {
   position: relative;
 }
 header .wrap {
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
   position: relative;
   height: 74px;
   padding-top: 10px;
 }
 header h1 {
-  background: asset-url('logo.png') 0 0 no-repeat;
+  background: asset-url('logo_.png') 0 0 no-repeat;
   width: 180px;
   height: 68px;
 }
 header h1 a {
   display: block;
   text-indent: -9999px;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
 }
 #menu {
   right: 0;
@@ -94,7 +99,10 @@ header h1 a {
 }
 #menu nav li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 20px;
+   border-bottom: 2px solid;
+  font-weight: bold;
+  padding-bottom: 1px;
 }
 .signin_box input{
   position: relative;
@@ -126,7 +134,49 @@ header h1 a {
   position: absolute;
   right: 20px;
   top: 100px;
-
+  }
+.story {
+  overflow: hidden;
+  width: 980px;
+  margin: 0 auto;
+}
+.story img {
+  margin: 0 auto;
+}
+.story h3 {
+  display: block;
+  font-size: 200%;
+  font-weight: normal;
+}
+.story h4 {
+  font-weight: normal;
+  font-size: 180%;
+}
+.ichi {
+  width: 320px;
+  height: 380px;
+  float: left;
+  margin-right: 10px;
+}
+.nino {
+  width: 320px;
+  height: 380px;
+  float: left;
+  margin-right: 10px;
+}
+ .san {
+  width: 320px;
+  height: 380px;
+  float: left;
+}
+.story dd {
+  text-align: left;
+}
+.story dt {
+  height: 200px;
+  text-align: center;
+}
+.story dl {
 }
 
 /*container*/
@@ -161,6 +211,8 @@ input {
   -moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
   -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
   box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #333;
+  padding: 5px;
 }
 .btn_large {
   padding: 20px 50px;
@@ -222,20 +274,55 @@ input {
           border-radius: 6px;*/
 }
 #userpage .items img {
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
+  margin: 0;
 }
 #userpage .items dl {
   font-size: 80%;
+}
+#userpage .items dt {
+  border-bottom: 1px solid;
+  padding-bottom: 2px;
 }
 #userpage .items ul {
   margin-top: 20px;
 }
 #userpage .items li.item {
-  width: 100px;
-  height: 100px;
-  background: asset-url('dummy.jpg');
-  background-size: cover;
-  margin: 0 5px 10px;
+    margin: 0 8px 18px;
+    position: relative;
+    background: #FFF;
+    /*border: 2px solid #ccc;*/
+    -webkit-border-radius: 6px;
+            border-radius: 6px;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33);
+    width: 160px;
+    height: 220px;
+    padding: 10px;
+}
+#userpage .itempack {
 }
 #userpage .pager {}
+
+/*signup*/
+#signup {
+  width: 680px;
+  margin: 80px auto;
+  font-size: 120%;
+}
+#signup input {
+  font-size: 100%;
+  -moz-box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+-webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
+}
+#signup th {
+  text-align: right;
+  padding: 20px;
+}
+#signup td {
+}
+#signup tr {
+  padding: 5px;
+}
