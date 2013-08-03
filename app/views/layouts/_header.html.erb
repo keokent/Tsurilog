@@ -12,20 +12,6 @@
             <li><%= link_to "サインイン", signin_path %></li>
           <% end %>
         </ul>
-        <% unless signed_in? %>
-          <div class="signin_box">
-            <% form_for(:session, url: sessions_path) do |f| % >
-
-            <%= f.label :email %>
-            <%= f.text_field :email %>
-
-            <%= f.label :password %>
-            <%= f.password_field :password %>
-
-            <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
-            <% end %>
-          </div>
-        <% end %>
       </nav>
     </div>
   </div>
