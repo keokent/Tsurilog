@@ -21,7 +21,7 @@ a {
   text-decoration: none;
   color: #000;
   &:hover {
-    color: #333;
+    color: #2cb071;
   }
 }
 h1, h2, h3,h4 {
@@ -255,9 +255,9 @@ input {
 .btn_mid {
   padding: 10px 20px;
   font-size: 120%;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   text-align: center;
 }
 .btn_small {
@@ -271,12 +271,12 @@ input {
     opacity: 0.9;
   }
 }
-.btn_blue {
-  background: #5792bf;
+.btn_green {
+  background: #2cb071;
   color: #ffffff;
   &:hover {
     color: #FFF;
-    opacity: 0.9;
+    opacity: 0.8;
   }
 }
 
