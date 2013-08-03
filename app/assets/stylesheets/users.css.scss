@@ -11,6 +11,9 @@ body {
 p {
   font-size: 12px;
 }
+small {
+  font-size: 100%;
+}
 a {
   text-decoration: none;
   color: #000;
@@ -43,14 +46,12 @@ dt,dd {
 header {
   width: 100%;
   position: relative;
-  height: 80px;
 }
 header .wrap {
   width: 980px;
   margin: 0 auto;
-  height: 80px;
   position: relative;
-
+  height: 80px;
 }
 header h1 {
   background: asset-url('logo.png') 0 0 no-repeat;
@@ -65,9 +66,9 @@ header h1 a {
 }
 #menu {
   right: 0;
-  top: 0;
+  top: 40px;
+  text-align: right;
   position: absolute;
-  height: 80px;
 }
 #menu .signin_box {
   width: 280px;
@@ -77,8 +78,16 @@ header h1 a {
           border-radius: 6px;
   background: #FFF;
 }
+#menu .signin_box input,label {
+}
+#menu .signin_box input {
+}
 #menu .signin_box label {
   margin-right: 10px;
+}
+#menu .signin_box th {
+  text-align: right;
+  font-size: 80%;
 }
 #menu nav {
 }
