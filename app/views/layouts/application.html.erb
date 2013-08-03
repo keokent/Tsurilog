@@ -12,11 +12,17 @@
     <div class="wrap">
       <h1><%= link_to "ホーム", "#" %>bite</h1>
       <div id="menu">
+        <nav>
         <ul>
           <li><%= link_to "ホーム", "#" %></li>
           <li><%= link_to "マイページ", "#" %></li>
           <li><%= link_to "サインイン", "#" %></li>
         </ul>
+        <nav>
+        <div class="signin_box">
+          <label>e-mail : <input type="email" name="email" id=""></label>
+          <label>password : <input type="text"></label>
+        </div>
       </div>
     </div>
   </header>
@@ -26,6 +32,7 @@
   </div>
 
   <footer>
+    <p><small>Copyright &copy; 2013 bite All Rights Reserved.</small></p>
   </footer>
 
 </body>
