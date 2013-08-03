@@ -3,6 +3,8 @@ FactoryGirl.define do
     name "Yamada Takashi"
     email "yamada@example.com"
     password_digest "password"
+    password_confirmation "password"
+    password "password"
   end
 
   factory :lure do
