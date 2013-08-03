@@ -51,7 +51,8 @@ header .wrap {
   width: 980px;
   margin: 0 auto;
   position: relative;
-  height: 80px;
+  height: 74px;
+  padding-top: 10px;
 }
 header h1 {
   background: asset-url('logo.png') 0 0 no-repeat;
@@ -204,7 +205,10 @@ input {
 #userpage .items {
   width: 600px;
   float: right;
-  padding: 10px;
+  padding: 20px;
+  border: 3px solid #000;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
 }
 #userpage .items ul {
   margin-top: 20px;
@@ -212,7 +216,8 @@ input {
 #userpage .items li.item {
   width: 100px;
   height: 100px;
-  background: #eee;
+  background: asset-url('dummy.jpg');
+  background-size: cover;
   margin: 0 5px 10px;
 }
 #userpage .pager {}
