@@ -111,7 +111,7 @@ header h1 a {
 
 /*intro*/
 #intro {
-  background-image: asset-url('intro_bg.jpg');
+  /*background-image: asset-url('intro_bg.jpg');*/
   background-repeat: no-repeat;
   background-size: 100%;
   min-height: 472px;
@@ -202,7 +202,7 @@ header h1 a {
 /*footer*/
 footer {
   width: 980px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   text-align: center;
 }
 
@@ -328,4 +328,14 @@ box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
 }
 #signup tr {
   padding: 5px;
+}
+
+/*error*/
+#error_explanation {
+}
+.alert {
+  color: #890000;
+    width: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
 }
