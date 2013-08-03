@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require 'spec_helper'
 
 describe "User pages" do
@@ -50,7 +51,7 @@ describe "User pages" do
         before { click_button submit }
         let(:user) { User.find_by(email: 'user@example.com') }
 
-        it { should have_link('Sign out') }
+        it { should have_link('サインアウト') }
         it { should have_selector('div.alert.alert-success', text: 'Welcome') }
       end
 

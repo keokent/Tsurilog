@@ -5,30 +5,10 @@
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
 </head>
 <body>
-
-  <header>
-    <div class="wrap">
-      <h1><%= link_to "bite", "#" %></h1>
-      <div id="menu">
-        <nav>
-        <ul>
-          <li><%= link_to "ホーム", "#" %></li>
-          <li><%= link_to "マイページ", "#" %></li>
-          <li><%= link_to "サインイン", "#" %></li>
-        </ul>
-        <nav>
-        <div class="signin_box">
-            <table>
-            <tr><th><label>e-mail</label></th><td><input type="email" name="email" id=""></td></tr>
-            <tr><th><label>password</label></th><td><input type="text"></td></tr>
-            <tr><td></td><td><input type="submit" value="サインイン"></td></tr>
-          </table>
-        </div>
-      </div>
-  </header>
-
+  <%= render 'layouts/header' %>
   <div class="container">
     <% flash.each do |key, value| %>
       <div class="alert alert-<%= key %>"><%= value %></div>
@@ -37,11 +17,6 @@
   <div class="container">
     <%= yield %>
   </div>
-
-  <footer>
-    <iThis is cool <i class="cool"></i>.
-    <p><small>Copyright &copy; 2013 bite All Rights Reserved.</small></p>
-  </footer>
-
+  <%= render 'layouts/footer' %>
 </body>
 </html>
