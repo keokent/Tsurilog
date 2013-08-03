@@ -5,17 +5,17 @@ describe "StaticPages" do
 
   describe "Home page" do
 
-    it "should have the content 'biteへようこそ'" do
-      visit "/static_pages/home"
-      expect(page).to have_content('biteへようこそ')
+    it "should have the content 'bite'" do
+      visit "/"
+      expect(page).to have_content('bite')
     end
   end
 
-  describe "Hlep page" do
+  describe "Help page" do
 
-    it "should have the content 'ヘルプ'" do
-      visit "/static_pages/help"
-      expect(page).to have_content('ヘルプ')
+    it "should have the content 'help'" do
+      visit "/help"
+      expect(page).to have_content('help')
     end
   end
 end
