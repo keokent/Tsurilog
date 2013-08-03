@@ -1,8 +1,7 @@
 <h1>Sign up</h1>
 
 <%= form_for(@user) do |f| %>
-  <% render 'shared/error_messages' %>
-  <%= f.submit "Sign Up"%>
+  <%= render 'shared/error_messages' %>
 
   <%= f.label :name %>
   <%= f.text_field :name %>
@@ -16,4 +15,6 @@
   <%= f.label :password_confirmation, "Confirmation" %>
   <%= f.password_field :password_confirmation %>
 
+  <%= f.submit "Sign Up" %>
 <% end%>
+
