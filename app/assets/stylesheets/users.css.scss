@@ -32,19 +32,27 @@ ul,li {
 
 /*header*/
 header {
-  background: #eee;
   width: 100%;
   position: relative;
-  height: 80px;
+  height: 90px;
 }
 header .wrap {
 /*  width: 980px;*/
   margin: 0 auto;
-  height: 80px;
+  height: 90px;
   position: relative;
 }
 header h1 {
-  display: inline;
+  background: asset-url('logo.png') 0 0 no-repeat;
+  width: 226px;
+  height: 86px;
+  margin: 10px 20px;
+}
+header h1 a {
+  display: block;
+  text-indent: -9999px;
+  width: 100px;
+  height: 100%;
 }
 #menu {
   right: 0;
@@ -74,13 +82,19 @@ header h1 {
 
 /*intro*/
 #intro {
-/*  background-image: asset-url('intro_bg.jpg');*/
+  background-image: asset-url('intro_bg.jpg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  min-height: 500px;
+  background-size: 100%;
+  min-height: 472px;
+  position: relative;
 }
 #intro h2 {
   font-weight: bold;
+}
+#intro .regi {
+  position: absolute;
+  right: 20px;
+  top: 30px;
 }
 
 /*container*/
