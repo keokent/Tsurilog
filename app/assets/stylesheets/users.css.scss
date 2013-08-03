@@ -28,6 +28,11 @@ h3 {
 }
 ul,li {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+dt,dd {
+  display: inline-block;
 }
 
 /*header*/
@@ -60,6 +65,9 @@ header h1 {
   -webkit-border-radius: 6px;
           border-radius: 6px;
   background: #FFF;
+}
+#menu .signin_box label {
+  margin-right: 10px;
 }
 #menu nav {
 }
@@ -117,16 +125,61 @@ input {
   box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
 }
 .btn_large {
-  color: #FFF;
-  background: #333;
+  padding: 20px 50px;
+  font-size: 150%;
+  -moz-border-radius: 10px;
+  -webkit-border-radius:  10px;
+  border-radius: 10px;
+}
+.btn_mid {
+  padding: 10px 20px;
+  font-size: 120%;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  padding: 20px 50px;
-  font-size: 150%;
+  text-align: center;
 }
-.btn_bk {
-  background: #000;
-  -webkit-border-radius: 6px;
-          border-radius: 6px;
+.btn_small {
+  padding: 3px 5px;
 }
+.btn_dark {
+  background: #333;
+  color: #FFF;
+}
+
+/*userpage*/
+#userpage {
+  width: 980px;
+  margin: 50px auto;
+}
+#userpage .wrap {
+  overflow: hidden;
+  zoom: 1;
+}
+#userpage .left {
+  height: 100%;
+  float: left;
+  padding: 20px;
+}
+#userpage .left .profile {
+
+}
+#userpage .new_item {
+  margin: 30px auto;
+  display: inline-block;
+}
+#userpage .items {
+  width: 600px;
+  float: right;
+  padding: 10px;
+}
+#userpage .items ul {
+  margin-top: 20px;
+}
+#userpage .items li.item {
+  width: 100px;
+  height: 100px;
+  background: #eee;
+  margin: 0 5px 10px;
+}
+#userpage .pager {}
