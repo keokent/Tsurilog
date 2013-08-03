@@ -11,7 +11,10 @@ namespace :db do
 
   desc "Fill database with dummy relationship"
   task generate_relationships: :environment do
-    user = User.find_by(id: 1)
+    user = User.create(name: "admin",
+                       email: "example@example.com",
+                       password: "hogemoge",
+                       password_confirmation: "hogemoge")
     Lure.count.times { |n|
       user.relationships.create!(lure_id: n)
     }
