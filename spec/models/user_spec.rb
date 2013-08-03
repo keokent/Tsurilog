@@ -16,9 +16,23 @@ describe User do
   it { should respond_to(:relationships) }
   it { should respond_to(:remember_token) }
   it { should respond_to(:authenticate) }
+  it { should respond_to(:registering?) }
+  it { should respond_to(:register!) }
 
   describe "remember token" do
     before { @user.save }
     its(:remember_token) { should_not be_blank }
+  end
+
+  describe "following" do
+    let(:lure) { FactoryGirl.create(:lure) }
+    let(:user) { FactoryGirl.create(:user) }
+    before do
+      @user.save
+      @user.register!(lure)
+    end
+
+    it { should be_registering(lure) }
+    its(:user) { should include(lure) }
   end
 end
