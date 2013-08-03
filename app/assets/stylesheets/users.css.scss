@@ -100,9 +100,7 @@ header h1 a {
 #menu nav li {
   display: inline-block;
   margin-right: 20px;
-   border-bottom: 2px solid;
   font-weight: bold;
-  padding-bottom: 1px;
 }
 .signin_box input{
   position: relative;
@@ -111,7 +109,7 @@ header h1 a {
 
 /*intro*/
 #intro {
-  /*background-image: asset-url('intro_bg.jpg');*/
+  background-image: asset-url('intro_bg.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   min-height: 472px;
@@ -151,6 +149,16 @@ header h1 a {
 .story h4 {
   font-weight: normal;
   font-size: 180%;
+  margin-top: 20px;
+
+}
+.circle {
+   width: 240px;
+   height: 240px;
+   background: #2cb071;
+   -moz-border-radius: 120px;
+   -webkit-border-radius: 120px;
+   border-radius: 120px;
 }
 .ichi {
   width: 320px;
@@ -158,28 +166,39 @@ header h1 a {
   float: left;
   margin-right: 10px;
 }
+.ichi img {
+  margin-top: 50px;
+}
 .nino {
   width: 320px;
   height: 380px;
   float: left;
   margin-right: 10px;
 }
+.nino img {
+  margin-top: 30px;
+}
  .san {
   width: 320px;
   height: 380px;
   float: left;
 }
+.san img {
+  margin-top: 30px;
+}
+.story dt,dd {
+  display: block;
+}
 .story dd {
   text-align: left;
 }
-.story dt {
-  height: 200px;
+.story dl {
   text-align: center;
 }
-.story dl {
-}
 .story dt {
-  height: 200px;
+  height: 240px;
+  width: 240px;
+  text-align: center;
 }
 
 /*container*/
@@ -264,6 +283,9 @@ input {
   -webkit-border-radius: 6px;
           border-radius: 6px;
 }
+#userpage .left span.name {
+  font-weight: bold;
+}
 #userpage .new_item {
   margin: 30px auto;
   display: inline-block;
@@ -285,8 +307,14 @@ input {
   font-size: 80%;
 }
 #userpage .items dt {
-  border-bottom: 1px solid;
+  display: block;
+}
+#userpage .items dd {
+  display: inline;
+  border-bottom: 2px solid;
   padding-bottom: 2px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 #userpage .items ul {
   margin-top: 20px;
