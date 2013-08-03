@@ -11,8 +11,12 @@ body {
 p {
   font-size: 12px;
 }
-a:link {
+a {
   text-decoration: none;
+  color: #000;
+  &:hover {
+    color: #666;
+  }
 }
 h1, h2, h3 {
   margin: 0;
@@ -35,23 +39,42 @@ header {
   background: #eee;
   width: 100%;
   position: relative;
+<<<<<<< Updated upstream
   height: 80px;
+=======
+>>>>>>> Stashed changes
 }
 header .wrap {
-/*  width: 980px;*/
+  width: 980px;
   margin: 0 auto;
+<<<<<<< Updated upstream
   height: 80px;
   position: relative;
 }
 header h1 {
   display: inline;
+=======
+  height: 78px;
+  position: relative;
+}
+header h1 {
+  background: asset-url('logo.png') 0 0 no-repeat;
+  width: 180px;
+  height: 68px;
+  margin: 10px 20px 0;
+  }
+header h1 a {
+  display: block;
+  text-indent: -9999px;
+  width: 100px;
+  height: 100%;
+>>>>>>> Stashed changes
 }
 #menu {
   right: 0;
   top: 0;
   position: absolute;
   height: 80px;
-  width: 500px;
 }
 #menu .signin_box {
   width: 280px;
@@ -60,6 +83,8 @@ header h1 {
   -webkit-border-radius: 6px;
           border-radius: 6px;
   background: #FFF;
+  position: absolute;
+  z-index: 100;
 }
 #menu nav {
 }
@@ -79,9 +104,25 @@ header h1 {
   background-size: auto 100%;
   min-height: 500px;
 }
+#intro .inner {
+  width: 980px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
 #intro h2 {
   font-weight: bold;
+  color: #FFF;
+  font-size: 180%;
 }
+<<<<<<< Updated upstream
+=======
+#intro .regi {
+  position: absolute;
+  right: 100px;
+  margin-right: 20px;
+  top: 100px;
+}
+>>>>>>> Stashed changes
 
 /*container*/
 #container {
@@ -124,6 +165,9 @@ input {
   border-radius: 6px;
   padding: 20px 50px;
   font-size: 150%;
+}
+.btn_large a {
+  color: #fff;
 }
 .btn_bk {
   background: #000;
