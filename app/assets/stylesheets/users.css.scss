@@ -36,17 +36,21 @@ ul,li {
 
 /*header*/
 header {
-  background: #eee;
   width: 100%;
   position: relative;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   height: 80px;
 =======
 >>>>>>> Stashed changes
+=======
+  height: 90px;
+>>>>>>> add-bg
 }
 header .wrap {
   width: 980px;
   margin: 0 auto;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   height: 80px;
   position: relative;
@@ -63,12 +67,26 @@ header h1 {
   height: 68px;
   margin: 10px 20px 0;
   }
+=======
+  height: 90px;
+  position: relative;
+}
+header h1 {
+  background: asset-url('logo.png') 0 0 no-repeat;
+  width: 226px;
+  height: 86px;
+  margin: 10px 20px;
+}
+>>>>>>> add-bg
 header h1 a {
   display: block;
   text-indent: -9999px;
   width: 100px;
   height: 100%;
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> add-bg
 }
 #menu {
   right: 0;
@@ -99,10 +117,11 @@ header h1 a {
 
 /*intro*/
 #intro {
-/*  background-image: asset-url('intro_bg.jpg');*/
+  background-image: asset-url('intro_bg.jpg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
-  min-height: 500px;
+  background-size: 100%;
+  min-height: 472px;
+  position: relative;
 }
 #intro .inner {
   width: 980px;
@@ -114,6 +133,7 @@ header h1 a {
   color: #FFF;
   font-size: 180%;
 }
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 #intro .regi {
@@ -123,6 +143,13 @@ header h1 a {
   top: 100px;
 }
 >>>>>>> Stashed changes
+=======
+#intro .regi {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+>>>>>>> add-bg
 
 /*container*/
 #container {
