@@ -300,6 +300,12 @@ input {
   -webkit-border-radius: 6px;
           border-radius: 6px;
 }
+#userpage .profile .activity {
+  font-size: 90%;
+}
+#userpage .profile .activity dd {
+  display: inline-block;
+}
 #userpage .left span.name {
   font-weight: bold;
 }
