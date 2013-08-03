@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require 'spec_helper'
 
 describe "Authentication" do
@@ -13,8 +14,8 @@ describe "Authentication" do
       it { should have_selector('div.alert.alert-error', text: 'Invalid') }
 
       describe "after visiting another page" do
-        before { click_link "Home" }
-        it { should_not have-selector('div.alert.alert-error') }
+        before { click_link "ホーム" }
+        it { should_not have_selector('div.alert.alert-error') }
       end
     end
 
@@ -26,12 +27,12 @@ describe "Authentication" do
         click_button "Sign in"
       end
 
-      it { should have_link('Sign out', href: signout_path) }
-      it { should_not have_link('Sign in', href: signin_path) }
+      it { should have_link('サインアウト', href: signout_path) }
+      it { should_not have_link('サインイン', href: signin_path) }
 
       describe "followed by signout" do
-        before { click_link "Sign out" }
-        it { should have_link('Sign in') }
+        before { click_link "サインアウト" }
+        it { should have_link('サインイン') }
       end
     end
   end
