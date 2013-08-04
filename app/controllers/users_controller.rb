@@ -24,6 +24,10 @@ class UsersController < ApplicationController
     end
   end
 
+  def register
+    @user = current_user
+  end
+
   private
 
     def user_params

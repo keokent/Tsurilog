@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
 
   has_many :reviews, dependent: :destroy
   has_many :relationships
-  has_many :luers, :through => :relationships
+  has_many :lures, :through => :relationships
 
   validates :name, presence: true
   validates :email, presence: true
@@ -19,6 +19,18 @@ class User < ActiveRecord::Base
 
   def User.encrypt(token)
     Digest::SHA1.hexdigest(token.to_s)
+  end
+
+  def register?(lure)
+    relationships.find_by(lure_id: lure.id)
+  end
+
+  def register!(lure)
+    relationships.create(lure_id: lure.id)
+  end
+
+  def unregister!(lure)
+    relationships.find_by(lure_id: lure.id).destroy!
   end
 
   private

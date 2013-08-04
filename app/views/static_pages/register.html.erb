@@ -1,0 +1,6 @@
+<h1>Lure Registering</h1>
+
+<%= form_for(@user.relationships.build(lure_id: :lure_id)) do |f| %>
+  <%= f.text_field :lure_id %>
+  <%= f.submit "Register", class: "btn btn-large btn-primary" %>
+<% end %>
