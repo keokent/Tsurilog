@@ -9,7 +9,12 @@
         </dl>
         <%= @user.email %>
       </div>
-      <div class="new_item btn_mid btn_dark"><%= link_to "アイテムを登録する", "/users/register" %></div>
+      <div class="new_item btn_mid btn_dark"><%= link_to "アイテムを登録する", "/register" %></div>
+      
+      <%= form_for(@user.relationships.build(lure_id: :lure_id)) do |f| %>
+        <%= f.text_field :lure_id %>
+        <%= f.submit "Register", class: "btn btn-large btn-primary" %>
+      <% end %>
 
     </div>
     <div class="items">

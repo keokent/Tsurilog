@@ -5,7 +5,7 @@ TsurilogApp::Application.routes.draw do
 
   root 'static_pages#home'
 
-  match '/register', to: 'static_pages#register', via:'get'
+  match '/register', to: 'users#register', via:'get'
   match '/signup', to: 'users#new',  via:'get'
   match '/signin', to: 'sessions#new', via: 'get'
   match '/signout', to: 'sessions#destroy', via: 'delete'
