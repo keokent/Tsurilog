@@ -8,81 +8,83 @@
         <dd>0個</dd>
       </dl>
    </div>
-    <div class="new_item btn_mid btn_green">アイテムを登録する </div>
+    <div class="new_item btn_mid btn_green"><%= link_to "アイテムを登録する", "/register" %> </div>
   </div>
   <div class="items">
       <h3></h3>
         <ul>
+          <% @user.lures.each do |item|%>
           <li class="item">
             <dl>
-              <dd>こんにゃく</dt>
-            <dt><%= image_tag('001.jpg') %></dt>
-            <dt>5789個</dt>
-          </dl>
-        </li>
-        <li class="item">
-            <dl>
-              <dd>こんにゃく</dt>
-            <dt><%= image_tag('001.jpg') %></dt>
-            <dt>5789個</dt>
-          </dl>
-        </li>
-        <li class="item">
-            <dl>
-              <dd>こんにゃく</dt>
-            <dt><%= image_tag('001.jpg') %></dt>
-            <dt>5789個</dt>
-          </dl>
-        </li>
-        <li class="item">
-            <dl>
-              <dd>こんにゃく</dt>
-            <dt><%= image_tag('001.jpg') %></dt>
-            <dt>5789個</dt>
-          </dl>
-        </li>
-        <li class="item">
-            <dl>
-              <dd>こんにゃく</dt>
-            <dt><%= image_tag('001.jpg') %></dt>
-            <dt>5789個</dt>
-          </dl>
-        </li>
-        <li class="item">
-            <dl>
-              <dd>こんにゃく</dt>
-            <dt><%= image_tag('001.jpg') %></dt>
-            <dt>5789個</dt>
-          </dl>
-        </li>
-        <li class="item">
-            <dl>
-              <dd>こんにゃく</dt>
-            <dt><%= image_tag('001.jpg') %></dt>
-            <dt>5789個</dt>
-          </dl>
-        </li>
-        <li class="item">
-            <dl>
-              <dd>こんにゃく</dt>
-            <dt><%= image_tag('001.jpg') %></dt>
-            <dt>5789個</dt>
-          </dl>
-        </li>
-        <li class="item">
-            <dl>
-              <dd>こんにゃく</dt>
-            <dt><%= image_tag('001.jpg') %></dt>
-            <dt>5789個</dt>
-          </dl>
-        </li>
-        <li class="item">
-            <dl>
-              <dd>こんにゃく</dt>
-            <dt><%= image_tag('001.jpg') %></dt>
-            <dt>5789個</dt>
-          </dl>
-        </li>
+              <dd><%= item.name%></dt>
+              <dt><%= image_tag(item.photo_url) %></dt>
+              <dt>5789個</dt>
+            </dl>
+          </li>
+          <% end %>
+        <!-- <li class="item"> -->
+        <!--     <dl> -->
+        <!--       <dd>こんにゃく</dt> -->
+        <!--     <dt><%= image_tag('001.jpg') %></dt> -->
+        <!--     <dt>5789個</dt> -->
+        <!--   </dl> -->
+        <!-- </li> -->
+        <!-- <li class="item"> -->
+        <!--     <dl> -->
+        <!--       <dd>こんにゃく</dt> -->
+        <!--     <dt><%= image_tag('001.jpg') %></dt> -->
+        <!--     <dt>5789個</dt> -->
+        <!--   </dl> -->
+        <!-- </li> -->
+        <!-- <li class="item"> -->
+        <!--     <dl> -->
+        <!--       <dd>こんにゃく</dt> -->
+        <!--     <dt><%= image_tag('001.jpg') %></dt> -->
+        <!--     <dt>5789個</dt> -->
+        <!--   </dl> -->
+        <!-- </li> -->
+        <!-- <li class="item"> -->
+        <!--     <dl> -->
+        <!--       <dd>こんにゃく</dt> -->
+        <!--     <dt><%= image_tag('001.jpg') %></dt> -->
+        <!--     <dt>5789個</dt> -->
+        <!--   </dl> -->
+        <!-- </li> -->
+        <!-- <li class="item"> -->
+        <!--     <dl> -->
+        <!--       <dd>こんにゃく</dt> -->
+        <!--     <dt><%= image_tag('001.jpg') %></dt> -->
+        <!--     <dt>5789個</dt> -->
+        <!--   </dl> -->
+        <!-- </li> -->
+        <!-- <li class="item"> -->
+        <!--     <dl> -->
+        <!--       <dd>こんにゃく</dt> -->
+        <!--     <dt><%= image_tag('001.jpg') %></dt> -->
+        <!--     <dt>5789個</dt> -->
+        <!--   </dl> -->
+        <!-- </li> -->
+        <!-- <li class="item"> -->
+        <!--     <dl> -->
+        <!--       <dd>こんにゃく</dt> -->
+        <!--     <dt><%= image_tag('001.jpg') %></dt> -->
+        <!--     <dt>5789個</dt> -->
+        <!--   </dl> -->
+        <!-- </li> -->
+        <!-- <li class="item"> -->
+        <!--     <dl> -->
+        <!--       <dd>こんにゃく</dt> -->
+        <!--     <dt><%= image_tag('001.jpg') %></dt> -->
+        <!--     <dt>5789個</dt> -->
+        <!--   </dl> -->
+        <!-- </li> -->
+        <!-- <li class="item"> -->
+        <!--     <dl> -->
+        <!--       <dd>こんにゃく</dt> -->
+        <!--     <dt><%= image_tag('001.jpg') %></dt> -->
+        <!--     <dt>5789個</dt> -->
+        <!--   </dl> -->
+        <!-- </li> -->
 
 
 
