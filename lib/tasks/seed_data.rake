@@ -13,13 +13,13 @@ namespace :db do
     Lure.create(name: "アベラバ 0.9g",
                 photo_url: "004.jpg",
                 lure_type: 1)
-    Lure.create(name: "ソルティー Dr.ミノー 50FS",
+    Lure.create(name: "ソルティー Dr.ミノー",
                 photo_url: "005.jpg",
                 lure_type: 1)
-    Lure.create(name: "アイシャッドテール 2.8インチ",
+    Lure.create(name: "アイシャッドテール",
                 photo_url: "006.jpg",
                 lure_type: 2)
-    Lure.create(name: "ゲーリーヤマモト　スーパグラブ 5インチ",
+    Lure.create(name: "スーパグラブ 5インチ",
                 photo_url: "007.jpg",
                 lure_type: 2)
     Lure.create(name: "グランデフロッグ ライム",
