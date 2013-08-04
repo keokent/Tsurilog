@@ -10,6 +10,27 @@ namespace :db do
     Lure.create(name: "Cherry 44",
                 photo_url: "003.jpg",
                 lure_type: 1)
+    Lure.create(name: "アベラバ 0.9g",
+                photo_url: "004.jpg",
+                lure_type: 1)
+    Lure.create(name: "ソルティー Dr.ミノー 50FS",
+                photo_url: "005.jpg",
+                lure_type: 1)
+    Lure.create(name: "アイシャッドテール 2.8インチ",
+                photo_url: "006.jpg",
+                lure_type: 2)
+    Lure.create(name: "ゲーリーヤマモト　スーパグラブ 5インチ",
+                photo_url: "007.jpg",
+                lure_type: 2)
+    Lure.create(name: "グランデフロッグ ライム",
+                photo_url: "008.jpg",
+                lure_type: 2)
+    Lure.create(name: "キラーズベイト",
+                photo_url: "009.jpg",
+                lure_type: 1)
+    Lure.create(name: "バズゼロツービート",
+                photo_url: "010.jpg",
+                lure_type: 1)
   end
 
   desc "Fill database with dummy relationship"
