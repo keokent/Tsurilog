@@ -26,6 +26,7 @@ class UsersController < ApplicationController
 
   def register
     @user = current_user
+    @user.relationships.create(Lure.find_by(id: params[:id]))
   end
 
   private
